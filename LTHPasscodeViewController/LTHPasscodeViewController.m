@@ -910,18 +910,18 @@ options:NSNumericSearch] != NSOrderedAscending)
                                  attribute: NSLayoutAttributeNotAnAttribute
                                 multiplier: 1.0f
                                   constant: kFailedAttemptLabelWidth];
-    NSLayoutConstraint *failedAttemptLabelHeight =
-    [NSLayoutConstraint constraintWithItem: _failedAttemptLabel
-                                 attribute: NSLayoutAttributeHeight
-                                 relatedBy: NSLayoutRelationEqual
-                                    toItem: nil
-                                 attribute: NSLayoutAttributeNotAnAttribute
-                                multiplier: 1.0f
-                                  constant: kFailedAttemptLabelHeight + 6.0f];
+//    NSLayoutConstraint *failedAttemptLabelHeight =
+//    [NSLayoutConstraint constraintWithItem: _failedAttemptLabel
+//                                 attribute: NSLayoutAttributeHeight
+//                                 relatedBy: NSLayoutRelationEqual
+//                                    toItem: nil
+//                                 attribute: NSLayoutAttributeNotAnAttribute
+//                                multiplier: 1.0f
+//                                  constant: kFailedAttemptLabelHeight + 6.0f];
     [self.view addConstraint:failedAttemptLabelCenterX];
     [self.view addConstraint:failedAttemptLabelCenterY];
     [self.view addConstraint:failedAttemptLabelWidth];
-    [self.view addConstraint:failedAttemptLabelHeight];
+//    [self.view addConstraint:failedAttemptLabelHeight];
     
     //    NSLog(@"constraints %@", self.view.constraints);
     //    NSLog(@"_passcodeTextField %@", _passcodeTextField.constraints);
