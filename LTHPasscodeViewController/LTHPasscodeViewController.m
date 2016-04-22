@@ -1328,7 +1328,8 @@ options:NSNumericSearch] != NSOrderedAscending)
     else {
         _failedAttemptLabel.text = [NSString stringWithFormat: LTHPasscodeViewControllerStrings(@"%i Passcode Failed Attempts"), _failedAttempts];
     }
-    _failedAttemptLabel.layer.cornerRadius = kFailedAttemptLabelHeight * 0.65f;
+//    _failedAttemptLabel.layer.cornerRadius = kFailedAttemptLabelHeight * 0.65f;
+    _failedAttemptLabel.layer.cornerRadius = kFailedAttemptLabelHeight * 0.5f;
     _failedAttemptLabel.clipsToBounds = true;
     _failedAttemptLabel.hidden = NO;
 }
